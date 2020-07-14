@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Виталий Марченко](https://up.htmlacademy.ru/adaptive/20/user/955829).
-* Наставник: `Неизвестно`.
+* Студент: [Виталий](https://up.htmlacademy.ru/adaptive/20/user/955829).
+* Наставник: [Малик](https://htmlacademy.ru/profile/id17217).
 
 ---
 

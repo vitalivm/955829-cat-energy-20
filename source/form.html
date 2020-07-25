@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Форма</title>
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo-img" href="index.html">
-        <img src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип изображение">
-      </a>
-      <a class="page-header__logo-text" href="index.html">
-        <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текст CatEnergy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item ">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Подобрать программу
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main page-form">
-
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текст CatEnergy">
-        </a>
-        <section class="page-footer__social social">
-          <h2 class="visually-hidden">
-            Мы в социальных сетях
-          </h2>
-          <ul class="social__list">
-            <li class="social-item">
-              <a class="social__link social__link--vkontakte" href="">
-                Мы в ВКонтакте
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social__link social__link--instagram" href="">
-                Мы в Инстаграм
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social__link social__link--facebook" href="">
-                Мы в Facebook
-              </a>
-            </li>
-          </ul>
-        </section>
-        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="copyright__text">
-            HTML Academy
-          </div>
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Иконка HTML Academy">
-        </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Форма</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo-img page-header__logo-img--mobile">
+      <img src="img/logo-mobile.svg" width="300" height="59" alt="Логотип изображение"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подобрать программу</a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </nav>
+  </header>
+  <main class="page-main page-form"></main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип текст CatEnergy"></a>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list site-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="" aria-label="Мы в ВКонтакте">
+              <img src="img/icon-vk.svg" width="23" height="16" alt="Мы в ВКонтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="" aria-label="Мы в Инстаграм">
+              <img src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграм"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="" aria-label="Мы в Facebook">
+              <img src="img/icon-fb.svg" width="22" height="22" alt="Мы в Facebook"></a>
+          </li>
+        </ul>
+      </section>
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="copyright__text">HTML Academy</div>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Иконка HTML Academy"></a>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo-img">
-        <img src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип изображение">
-      </a>
-      <a class="page-header__logo-text">
-        <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текст CatEnergy">
+    <header class="page-header mobile">
+      <a class="page-header__logo-img page-header__logo-img--mobile">
+        <img src="img/logo-mobile.svg" width="300" height="59" alt="Логотип изображение">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -37,7 +36,7 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main mobile">
       <section class="slogan">
         <h1 class="slogan__title">
           Функциональное питание для котов
@@ -45,8 +44,8 @@
         <h2 class="slogan__subtitle">
           Занялся собой? Займись котом!
         </h2>
-        <img src="https://via.placeholder.com/280x270" width="280" height="270" alt="Изображение товара">
-        <a href="form.html" class="slogan__form-link">
+        <img src="img/index-can-mobile%401x.png" width="280" height="270" alt="Изображение товара">
+        <a href="form.html" class="slogan__link">
           Подобрать программу
         </a>
       </section>
@@ -55,8 +54,10 @@
           Выберите программу
         </h2>
         <div class="programs__item">
-          <div class="programs__header programs__header--slimming">
-            <img src="https://via.placeholder.com/50x53" width="50" height="53" alt="Программа похудения">
+          <div class="programs__header">
+            <div class="programs__icon programs__icon--slim">
+              <img src="img/icon-cat-slim.svg" width="36" height="50" alt="Программа Slim">
+            </div>
             Похудение
           </div>
           <p class="programs__desc">
@@ -66,9 +67,11 @@
             Каталог Slim
           </a>
         </div>
-        <div class="programs__item">
-          <div class="programs__header programs__header--weight-gain">
-            <img src="https://via.placeholder.com/67x50" width="67" height="50" alt="Программа набора массы">
+        <div class="programs__item programs__icon--pro">
+          <div class="programs__header">
+            <div class="programs__icon">
+              <img src="img/icon-cat-pro.svg" width="67" height="28" alt="Программа Pro">
+            </div>
             Набор массы
           </div>
           <p class="programs__desc">
@@ -83,49 +86,57 @@
         <h2 class="works__title">
           Как это работает
         </h2>
-        <ul class="works__list">
+        <ul class="works__list site-list">
           <li class="works__item">
-            <img src="https://via.placeholder.com/60x60" width="60" height="60" alt="Иконка">
-            Функциональное питание содержит только полезные питательные вещества.
+            <div class="works__img">
+              <img src="img/advantage-leaf@1x.png" width="50" height="50" alt="Иконка">
+            </div>
+            <p>Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="works__item">
-            <img src="https://via.placeholder.com/60x60" width="60" height="60" alt="Иконка">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <div class="works__img">
+              <img src="img/advantage-powder@1x.png" width="50" height="50" alt="Иконка">
+            </div>
+            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="works__item">
-            <img src="https://via.placeholder.com/60x60" width="60" height="60" alt="Иконка">
-            Замените один-два приема обычной еды на наше функциональное питание.
+            <div class="works__img">
+              <img src="img/advantage-dining@1x.png" width="50" height="50" alt="Иконка">
+            </div>
+            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="works__item">
-            <img src="https://via.placeholder.com/60x60" width="60" height="60" alt="Иконка">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <div class="works__img">
+              <img src="img/advantage-clock@1x.png" width="50" height="50" alt="Иконка">
+            </div>
+            <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer mobile">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текст CatEnergy">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип текст CatEnergy">
         </a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">
             Мы в социальных сетях
           </h2>
-          <ul class="social__list">
+          <ul class="social__list site-list">
             <li class="social-item">
-              <a class="social__link social__link--vkontakte" href="">
-                Мы в ВКонтакте
+              <a class="social__link social__link--vkontakte" href="" aria-label="Мы в ВКонтакте">
+                <img src="img/icon-vk.svg" width="23" height="16" alt="Мы в ВКонтакте">
               </a>
             </li>
             <li class="social-item">
-              <a class="social__link social__link--instagram" href="">
-                Мы в Инстаграм
+              <a class="social__link social__link--instagram" href="" aria-label="Мы в Инстаграм">
+                <img src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграм">
               </a>
             </li>
             <li class="social-item">
-              <a class="social__link social__link--facebook" href="">
-                Мы в Facebook
+              <a class="social__link social__link--facebook" href="" aria-label="Мы в Facebook">
+                <img src="img/icon-fb.svg" width="22" height="22" alt="Мы в Facebook">
               </a>
             </li>
           </ul>
@@ -134,7 +145,7 @@
           <div class="copyright__text">
             HTML Academy
           </div>
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Иконка HTML Academy">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Иконка HTML Academy">
         </a>
       </div>
     </footer>

@@ -1,70 +1,18 @@
-@import "source/less/normalize.less";
-@import "source/less/blocks/page-header.less";
-@import "source/less/blocks/page-main.less";
-@import "source/less/blocks/page-footer.less";
-@import "source/less/blocks/main-nav.less";
-@import "source/less/blocks/programs.less";
-@import "source/less/blocks/slogan.less";
-@import "source/less/blocks/catalog.less";
-@import "source/less/blocks/works.less";
-@font-face {
-  font-family: Oswald;
-  src: url('../fonts/oswaldregular.woff2')
-         format('woff2'),
-       url('../fonts/oswaldregular.woff')
-         format('woff');
-}
-
-@basic-green: #68B738;
-
-/* Global */
-
-body {
-  font-family: 'Oswald', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #000;
-}
-a {
-  text-decoration: none;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* Custom CSS */
-
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
-.site-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile {
-  max-width: 320px;
-}
+@import "variable.less";
+@import "fonts.less";
+@import "normalize.less";
+@import "general.less";
+@import "blocks/catalog.less";
+@import "blocks/goods.less";
+@import "blocks/main-nav.less";
+@import "blocks/more.less";
+@import "blocks/page-footer.less";
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/page.less";
+@import "blocks/programs.less";
+@import "blocks/site.less";
+@import "blocks/slogan.less";
+@import "blocks/social.less";
+@import "blocks/specifications.less";
+@import "blocks/works.less";
